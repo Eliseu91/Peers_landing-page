@@ -1,0 +1,114 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --font:("Mulish", sans-serif);
+    --verde:(#d3fb53);
+    --azul:(blue);
+    --text: (#052326);
+}
+
+div.icon {
+    padding-left: 50px;
+}
+nav {
+    font-family: "Mulish", sans-serif;
+    text-align: right;
+    padding-right: 20px;
+
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+h1 {
+    font-weight:900;
+    color: var(--text);
+    padding-bottom: 20px;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+strong {
+    background-color: #d3fb53;
+    font-weight: 900;
+}
+
+section.one {
+    height: 500px;
+    padding-top: 80px;
+    background-color: white;
+    background-image: url(./img/modelo.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: relative;
+    padding-left: 50px;
+    margin: none;
+}
+
+section.one > p {
+    padding-bottom: 20px;
+}
+
+.button {
+    background-color: rgb(122, 243, 255);
+    padding: 20px;
+    border-radius: 5px;
+    width: 175px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.451); 
+}
+
+.button:hover{
+    background-color: #d3fb53;
+    transition-duration: 0.5s;
+}
+
+section.two {
+    min-width: 400px;
+    background-color: #d3fb53;
+    height: 500px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    padding-top: 20px;
+    margin: 0%;
+    
+}
+
+.subtitulo {
+    margin: 0.5em;
+    text-align: center;
+    padding-bottom: 35px;
+    
+}
+
+.container {
+    width: 850px;
+    height: 200px;
+    display:flex;
+    flex-direction: row;
+    margin-inline-start: 35px;
+    margin: auto;
+    justify-content: space-evenly;   
+}
+
+.passo1, .passo2, .passo3 {
+    width: 200px;
+    height: 250px;
+    border: 3px solid black;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px
+    
+}
+
+.passo1, .passo2, .passo3 > img {
+
+    padding: 10px;
+}

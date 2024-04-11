@@ -1,4 +1,9 @@
+@charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
@@ -9,14 +14,58 @@
     --text: (#052326);
 }
 
-div.icon {
-    padding-left: 50px;
+header, menu {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: baseline;
+    justify-content: space-between;
+
+    
 }
-nav {
+
+menu {
     font-family: "Mulish", sans-serif;
     text-align: right;
-    padding-right: 20px;
+}
 
+menu> ul {
+    padding-bottom: 40px;
+}
+
+menu > ul > li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+menu > ul > li > a {
+    text-decoration: none;
+    color: #052326;
+    padding: 8px;
+    
+}
+menu > ul > li > a:hover {
+    background-color: #7af3ff;
+    width: 80px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transform: translate(-3px, -3px);
+
+
+}
+
+li#butlogin {
+    text-align: center;
+    border: 2px solid #d3fb53;
+    
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+li#butlogin:hover{
+    background-color: #d3fb53;
+    cursor: pointer;
 }
 
 body {
@@ -54,7 +103,7 @@ section.one > p {
 }
 
 .button {
-    background-color: rgb(122, 243, 255);
+    background-color: #7af3ff;
     padding: 20px;
     border-radius: 5px;
     width: 175px;
@@ -111,4 +160,91 @@ h2 {
 .passo1, .passo2, .passo3 > img {
 
     padding: 10px;
+}
+
+.three {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.three > div {
+    height: max(80vh);
+    background-color: #7af3ff;
+}
+
+.three > div > h2 {
+    height:50px;
+    background-color: #ffffff;
+} 
+    
+.number {
+    font-size: 3em;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.comofunciona{
+    
+    width: 450px;
+    padding-left: 50px;
+}
+
+.passos {
+    width: 50%;
+    padding-left: 50px;  
+    display: flex;
+    gap: 4px;
+    box-sizing: inherit;
+}
+
+.passos > div {
+    align-items: stretch;
+    color: rgb(163, 162, 162);
+    width: 100px;
+    height: 50px;
+    
+    margin-top: 40px;
+    background-color: rgb(234, 228, 228);
+    border-radius: 7px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 14px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.passos >div:hover{
+    color: #052326;
+    font-weight: bolder;
+    text-decoration: underline #052326 3px;
+    transition: ease-in-out;
+    transition-duration: .3s;
+}
+
+.step01 {
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 3;
+    width: 90%;
+    height: 50vh;
+    transform: translateY(-100px);
+
+
+}
+
+.bgstep {
+    background-color: #d3fb53;
+    bottom: 0;
+    right: 0px;
+    display: block;
+    border-start-start-radius: 50px;
+    position: absolute;
+    height: 87.5%;
+    width: 40%;
+    z-index: 1;
+
+
 }

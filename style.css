@@ -35,6 +35,13 @@ menu {
     text-align: right;
 }
 
+menu > span {
+    font-size: 1.5em;
+    color: #052326;
+    transform: translateY(8px);  
+    cursor: pointer;
+}
+
 menu> ul {
     padding-bottom: 40px;
 }
@@ -45,9 +52,11 @@ menu > ul > li {
 }
 
 menu > ul > li > a {
+    display: none;
     text-decoration: none;
     color: #052326;
     padding: 8px;
+
     
 }
 menu > ul > li > a:hover {
@@ -83,16 +92,18 @@ main {
 }
 
 h1 {
+    text-align: center;
     font-weight:900;
-    color: var(--text);
+    color: #052326;
     padding-bottom: 20px;
     font-size: 2em;
-    line-height: 1em;
+    line-height: 1.3em;
 }
 
 strong {
     background-color: #d3fb53;
     font-weight: 900;
+
 }
 
 section.one {
@@ -115,7 +126,7 @@ section.one {
 }
 
 section.one > p {
-    text-align: justify;
+    text-align: center;
     padding-bottom: 20px;
 }
 
@@ -130,6 +141,7 @@ section.one > p {
   
 .button {
     text-align: center;
+    margin: auto;
     margin-top: 10px;
     border: #d3fb53 2px solid;
     padding: 10px;

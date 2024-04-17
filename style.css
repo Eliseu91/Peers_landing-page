@@ -220,6 +220,7 @@ h2 {
 }
 
 .three {
+    overflow: hidden;
     height: 550px;
     position: relative;
 }

@@ -43,7 +43,7 @@ menu > span {
 }
 
 menu> ul {
-    min-width: 300px;
+    min-width: 200px;
     padding-bottom: 40px;
     
 }
@@ -223,14 +223,18 @@ h2 {
     overflow: hidden;
     height: 550px;
     position: relative;
+
 }
 
 .three > div {
+    display: flex;
+    flex-wrap: wrap;
     height: max(80vh);
     background-color: #7af3ff;
 }
 
-.three > div > h2 {
+.three > h2 {
+    display: block;
     height:50px;
     background-color: #ffffff;
 } 
@@ -241,18 +245,15 @@ h2 {
     padding-top: 30px;
 }
 
-.comofunciona{
-    
+.passos > p {
     width: 450px;
     padding-left: 50px;
 }
 
 .passos {
     width: 50%;
-    padding-left: 50px;  
-    display: flex;
     gap: 4px;
-    box-sizing: inherit;
+
 }
 
 .passos > div {
@@ -279,28 +280,21 @@ h2 {
 }
 
 .step01 {
-   
     right: 0px;
-    text-align: right;
-    vertical-align: middle;
-    z-index: 3;
-    width: 90%;
-    height: 50vh;
-    transform: translateY(-100px);
-
+    position: absolute;
+    transform: translateY(70px);
 
 }
 
 .bgstep {
     background-color: #d3fb53;
+    position: absolute;
     bottom: 0;
     right: 0px;
-    display: block;
     border-start-start-radius: 50px;
-    
     height: 87.5%;
     width: 40%;
-    z-index: 1;
+
 
 
 }

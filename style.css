@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
-html {
+html, body {
     width: 100vw;
     margin: auto;
 }
@@ -43,7 +43,9 @@ menu > span {
 }
 
 menu> ul {
+    min-width: 300px;
     padding-bottom: 40px;
+    
 }
 
 menu > ul > li {

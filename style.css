@@ -44,7 +44,7 @@ menu > span {
 
 menu> ul {
     min-width: 200px;
-    padding-bottom: 40px;
+
     
 }
 
@@ -127,7 +127,8 @@ section.one {
     margin: auto;
 }
 
-section.one > p {
+.oneinfo > p {
+    margin: auto;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -148,7 +149,8 @@ section.one > p {
     border: #d3fb53 2px solid;
     padding: 10px;
     border-radius: 30px;
-    width: 220px;
+    width: 200px;
+    height: 50px;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.208); 
     box-sizing: border-box;
 }
@@ -220,7 +222,6 @@ h2 {
 }
 
 .three {
-    overflow: hidden;
     height: 550px;
     position: relative;
 
@@ -230,6 +231,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     height: max(80vh);
+    justify-content: space-between;
     background-color: #7af3ff;
 }
 
@@ -252,17 +254,18 @@ h2 {
 
 .passos {
     width: 50%;
-    gap: 4px;
+  
 
 }
 
 .passos > div {
-    align-items: stretch;
+    display: inline-block;
+    transform: translateX(50px);
     color: rgb(163, 162, 162);
     width: 100px;
     height: 50px;
-    
     margin-top: 40px;
+    margin-right: 10px;
     background-color: rgb(234, 228, 228);
     border-radius: 7px;
     text-align: center;
@@ -274,27 +277,25 @@ h2 {
 .passos >div:hover{
     color: #052326;
     font-weight: bolder;
-    text-decoration: underline #052326 3px;
+    text-decoration: underline #d3fb53 3px;
     transition: ease-in-out;
-    transition-duration: .3s;
+    transition-duration: .2s;
 }
 
 .step01 {
     right: 0px;
-    position: absolute;
-    transform: translateY(70px);
-
-}
-
-.bgstep {
-    background-color: #d3fb53;
-    position: absolute;
-    bottom: 0;
-    right: 0px;
+    position: relative;
+    height: 40vh;
+    background: #d3fb53;
+    background-size: cover;
     border-start-start-radius: 50px;
-    height: 87.5%;
-    width: 40%;
+    overflow: visible;
+    
+}
 
-
+.step01 > img {
+    transform: translateY(7vh);
 
 }
+
+

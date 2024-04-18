@@ -224,6 +224,7 @@ h2 {
 .three {
     height: 550px;
     position: relative;
+    overflow:unset;
 
 }
 

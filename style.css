@@ -253,7 +253,7 @@ h2 {
 }
 
 .passos {
-    width: 50%;
+    min-width: 40%;
   
 
 }

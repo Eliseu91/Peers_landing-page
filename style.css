@@ -231,7 +231,7 @@ h2 {
 .three > div {
     display: flex;
     flex-wrap: wrap;
-    height: max(80vh);
+    height: max(60vh);
     justify-content: space-between;
     background-color: #7af3ff;
 }
@@ -251,6 +251,7 @@ h2 {
 .passos > p {
     width: 450px;
     padding-left: 50px;
+    margin: auto;
 }
 
 .passos {
@@ -284,17 +285,19 @@ h2 {
 }
 
 .step01 {
-    right: 0px;
+  
     position: relative;
     height: 40vh;
     background: #d3fb53;
     background-size: cover;
     border-start-start-radius: 50px;
-    overflow: visible;
+
     
 }
 
 .step01 > img {
+    width: 100%;
+    right: 0px;
     transform: translateY(7vh);
 
 }
